@@ -14,7 +14,6 @@
 		B32D42DA29C5C8B70080E186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32D42D929C5C8B70080E186 /* Assets.xcassets */; };
 		B32D42DD29C5C8B70080E186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32D42DB29C5C8B70080E186 /* LaunchScreen.storyboard */; };
 		B32D42E629C5C8D30080E186 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = B32D42E529C5C8D30080E186 /* SpringAnimation */; };
-		B32D42E829C5F6530080E186 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D42E729C5F6530080E186 /* AnimationType.swift */; };
 		B32D42EA29C5FC4B0080E186 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D42E929C5FC4B0080E186 /* Datastore.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		B32D42D929C5C8B70080E186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32D42DC29C5C8B70080E186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B32D42DE29C5C8B70080E186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B32D42E729C5F6530080E186 /* AnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
 		B32D42E929C5FC4B0080E186 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 				B32D42D029C5C8B60080E186 /* AppDelegate.swift */,
 				B32D42D229C5C8B60080E186 /* SceneDelegate.swift */,
 				B32D42D429C5C8B60080E186 /* MainViewController.swift */,
-				B32D42E729C5F6530080E186 /* AnimationType.swift */,
 				B32D42E929C5FC4B0080E186 /* Datastore.swift */,
 				B32D42D629C5C8B60080E186 /* Main.storyboard */,
 				B32D42D929C5C8B70080E186 /* Assets.xcassets */,
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B32D42E829C5F6530080E186 /* AnimationType.swift in Sources */,
 				B32D42D529C5C8B60080E186 /* MainViewController.swift in Sources */,
 				B32D42D129C5C8B60080E186 /* AppDelegate.swift in Sources */,
 				B32D42EA29C5FC4B0080E186 /* Datastore.swift in Sources */,

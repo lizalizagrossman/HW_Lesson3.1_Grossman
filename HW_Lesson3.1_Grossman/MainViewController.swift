@@ -27,21 +27,16 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelTitles()
-        delay = getRandomNumberInRange(min: 0.0, max: 4.0)
-        duration = getRandomNumberInRange(min: 0.8, max: 4.0)
-        force = getRandomNumberInRange(min: 1.0, max: 5.0)
     }
     
     @IBAction func buttonRunTapped(_ sender: UIButton) {
         if sender.titleLabel?.text == "Run Animation" {
+            setLabelTitles()
             setAnimationSettings(for: infoView)
             animations = animations.shuffled()
             curves = curves.shuffled()
             sender.setTitle("Run \(animations.first ?? "")", for: .normal)
         } else {
-            delay = getRandomNumberInRange(min: 0.0, max: 4.0)
-            duration = getRandomNumberInRange(min: 0.8, max: 4.0)
-            force = getRandomNumberInRange(min: 1.0, max: 5.0)
             setAnimationSettings(for: infoView)
             setLabelTitles()
         
@@ -52,11 +47,15 @@ final class MainViewController: UIViewController {
     }
     
     private func setLabelTitles() {
+        delay = getRandomNumberInRange(min: 0.0, max: 4.0)
+        duration = getRandomNumberInRange(min: 0.8, max: 4.0)
+        force = getRandomNumberInRange(min: 1.0, max: 5.0)
+        
         presetLabel.text = "\(animations.first ?? "")"
         curveLabel.text = "\(curves.first ?? "")"
-        delayLabel.text = "\(delay ?? 0)"
-        forceLabel.text = "\(force ?? 0)"
-        durationLabel.text = "\(duration ?? 0)"
+        delayLabel.text = "\(delay ?? 0 )"
+        durationLabel.text = "\(duration ?? 0 )"
+        forceLabel.text = "\(force ?? 0 )"
     }
     
     private func setAnimationSettings(for view: SpringView) {
@@ -69,7 +68,7 @@ final class MainViewController: UIViewController {
     }
     
     private func getRandomNumberInRange(min: CGFloat, max: CGFloat) -> CGFloat {
-        ((CGFloat.random(in: min ..< max) * 10) / 10.0)
+        round((CGFloat.random(in: min ..< max) * 10) / 10.0)
     }
     
 }
